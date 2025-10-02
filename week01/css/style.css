@@ -85,6 +85,23 @@ nav li{
     height: 100%;
     width: 100%;
  }
+ /*Find Pokemon*/
+ .findPokemon{
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .Serach_Pokemon{
+    display: flex;
+    justify-content: center;
+ }
+ #speciesName{
+    border-radius: 3%;
+    margin: 0px 10px;
+ }
 
 /*Cards Section*/
 .cards{
@@ -138,6 +155,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 90%;
+    margin: auto;
 }
 .global-footer-links{
     width: 50%;
