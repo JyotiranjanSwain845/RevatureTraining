@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../css/WelcomeUser.module.css'
 import { useEffect,useState } from 'react';
-
+import axios from 'axios';
 
 
 export default function Welcome() {
@@ -11,15 +11,14 @@ export default function Welcome() {
     const signal = controller.signal
     try {
       async function fetchJoke() {
-        const raw_jokes = await fetch(
+        const Joke = await axios.get(
           "https://sv443.net/jokeapi/v2/joke/Programming"
         ,{signal});
-        const parseJoke = await raw_jokes.json();
+        //const parsedjoke = joke.json();
         setJoke({
-          setup: parseJoke.setup,
-          delivery: parseJoke.delivery,
+          setup: Joke.data.setup,
+          delivery: Joke.data.delivery,
         });
-        await console.log(joke);
       }
       fetchJoke();
       ()=>controller.abort();
