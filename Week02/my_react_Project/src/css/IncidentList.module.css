@@ -1,0 +1,20 @@
+.IncidentList{
+    width : 90%;
+    display: flex;
+    flex-wrap:no-wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% auto;
+    overflow-x:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.incidentForm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#317fdb42;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}

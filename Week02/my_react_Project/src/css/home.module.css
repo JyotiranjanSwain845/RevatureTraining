@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#6CB4EE;
+    color: rgb(90, 87, 87);
+    padding: 5px 10px;
+    position: sticky;
+    top: 0%;
+}
+
+.darkHeader ,.darkHeader a {
+  background-color: #333;
+  border-bottom: 1px solid #555;
+  color: antiquewhite;
+}
+.navigator{
+    width: 60%;
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right: 10px;
+}
+.listItems{
+    list-style-type: none;
+    margin: 0px 10px;
+}
+header nav  a{
+    text-decoration: none;
+    padding: 5px;
+    color: rgb(67, 67, 67);
+}
+
+
+.listItems a:hover{
+    color: rgb(128, 113, 113);
+}
+
+.gettime{
+    font-size: 10px;
+    margin: 0%;
+    padding: 0%;
+}
+.welcome{
+    font-size: 26px;
+}

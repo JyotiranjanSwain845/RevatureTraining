@@ -1,0 +1,14 @@
+.incident{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 15px rgba(45, 79, 78,0.6);
+    background-color:#ADD8E6;
+    border-radius: 8px;
+    width:30%;
+    height: 240px;
+    flex: 0 0 auto;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
