@@ -32,14 +32,14 @@ export default function Welcome() {
       <div className={styles.welcomeUser}>
         <h1>Helllooo...!!!!</h1>
       </div>
-      <div>
-        <p>
-          question:<q>{joke.setup}</q>
-        </p>
+      <div className={styles.welcomeUser}>
+        <h1>
+          {joke.setup}
+        </h1>
         <br />
-        <p>
-          ans:<q>{joke.delivery}</q>
-        </p>
+        <h1>
+          {joke.delivery}
+        </h1>
         <br />
       </div>
     </section>

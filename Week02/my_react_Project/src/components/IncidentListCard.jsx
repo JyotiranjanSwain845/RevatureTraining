@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Incident from './Incident'
 import styles from '../css/IncidentList.module.css'
+import { ThemeContext } from './ThemeContext';
+
+
 export default function IncidentListCard({myincident,onDelete,onSave}) {
   
   const [formData, setFormData] = useState({
@@ -25,10 +28,12 @@ export default function IncidentListCard({myincident,onDelete,onSave}) {
 
 
 
-
+ const { theme, setTheme } = useContext(ThemeContext);
   return (
     <section>
-      <form className={styles.incidentForm} id="new_incident_form" onSubmit={handleSubmit}>
+      <form className={`${styles.incidentForm} ${
+                theme === "light" ? styles.lightincidentForm : styles.darkincidentForm
+              }`} id="new_incident_form" onSubmit={handleSubmit}>
         <label for="incident_id">Inc_ID : </label>
         <input
           type="text"
