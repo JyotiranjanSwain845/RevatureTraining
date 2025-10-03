@@ -40,7 +40,9 @@ export default function Home() {
 
   const { theme, setTheme } = useContext(ThemeContext);
   return (
-    <>
+    <section className={`${styles.cbody}  ${
+          theme === "light" ? styles.lightcbody : styles.darkcbody
+        }`}>
       <header
         className={`${styles.header}  ${
           theme === "light" ? styles.lightHeader : styles.darkHeader
@@ -61,7 +63,7 @@ export default function Home() {
                 theme === "light" ? styles.lightlistItems : styles.darklistItems
               }`}
             >
-              <Link to="/" onClick={() => setContent("home")}>
+              <Link to="/">
                 Home
               </Link>
             </li>
@@ -70,7 +72,7 @@ export default function Home() {
                 theme === "light" ? styles.lightlistItems : styles.darklistItems
               }`}
             >
-              <Link to="/incident" onClick={() => setContent("list")}>
+              <Link to="/incident">
                 Incidents
               </Link>
             </li>
@@ -103,6 +105,6 @@ export default function Home() {
           }
         ></Route>
       </Routes>
-    </>
+    </section>
   );
 }

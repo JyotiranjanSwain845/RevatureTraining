@@ -3,9 +3,15 @@
     margin: 0%;
     padding: 0%;
 }
-body{
+.cbody{
     background-color: rgb(255, 255, 255);
+    height: 100vh;
 }
+.darkcbody{
+    background-color: #555;
+    color: rgb(246, 171, 32);
+}
+
 .header{
     display: flex;
     align-items: center;
