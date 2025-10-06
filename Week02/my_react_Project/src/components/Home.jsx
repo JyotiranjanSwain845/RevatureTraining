@@ -82,10 +82,12 @@ export default function Home() {
               }`}
             >
               <button
-                className={styles.toggleDarkMode}
+                className={`${styles.toggleMode}  ${
+                theme === "light" ? styles.togglLightMode : styles.toggleDarkMode
+              }`}
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               >
-                darkMode
+               {(theme=='light')?'darkmode':'lightmode'}
               </button>
             </li>
           </ul>

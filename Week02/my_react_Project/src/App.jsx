@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 function App() {
-  var [theme,setTheme] = useState('light');
+  var [theme,setTheme] = useState('');
   return (
     <BrowserRouter>
     <ThemeContext.Provider value={{ theme, setTheme }}>

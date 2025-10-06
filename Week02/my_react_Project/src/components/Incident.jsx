@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../css/Incident.module.css";
 import { ThemeContext } from "./ThemeContext";
 import { useContext } from "react";
-
+import Button from "@mui/material/Button";
 export default function Incident({ inc, onDelete }) {
   const { incident_id, priority, severity, status } = inc;
   const { theme, setTheme } = useContext(ThemeContext);
@@ -17,7 +17,11 @@ export default function Incident({ inc, onDelete }) {
       <p>Priority : {priority}</p>
       <p>Severity : {severity}</p>
       <p>Current_Status : {status}</p>
-      <button onClick={() => onDelete(incident_id)}>delete</button>
+      <Button variant="contained" onClick={() => onDelete(incident_id)} sx={{backgroundColor:"#00000036"}}>
+        Delete
+      </Button>
+
+      {/* <button onClick={() => onDelete(incident_id)}>delete</button> */}
     </div>
   );
 }

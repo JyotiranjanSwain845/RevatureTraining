@@ -1,5 +1,6 @@
 .IncidentList{
     width : 90%;
+    height: 300px;
     display: flex;
     flex-wrap:no-wrap;
     justify-content: space-around;
@@ -7,6 +8,10 @@
     margin: 5% auto;
     overflow-x:scroll;
     -webkit-overflow-scrolling: touch;
+    
+}
+.IncidentList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 
 .incidentForm{
@@ -19,6 +24,9 @@
     margin: auto;
 }
 .darkincidentForm{
-    background-color:#13315496;
-    color: white;
+    background-color:#43484d;
+    color: rgb(201, 136, 57);
+}
+.darkincidentForm input, .darkincidentForm select{
+    background-color: #d9d9d9;
 }

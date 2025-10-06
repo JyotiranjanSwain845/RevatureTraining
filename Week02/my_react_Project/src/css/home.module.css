@@ -61,3 +61,25 @@ header nav  a{
 .welcome{
     font-size: 26px;
 }
+
+.toggleMode{
+    border-radius: 15px;
+    background-color: #4f85b1;
+    color: aliceblue;
+    padding: 2px;
+}
+.toggleMode:hover{
+    border-radius: 15px;
+    background-color: #000000;
+    color: rgb(224, 172, 18);
+    padding: 10px;
+}
+
+.toggleDarkMode{
+    background-color: #000000;
+    color: rgb(224, 172, 18);
+}
+.toggleDarkMode:hover{
+    background-color: #4f85b1;
+    color: aliceblue;
+}

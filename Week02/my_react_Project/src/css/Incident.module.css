@@ -14,6 +14,7 @@
 }
 
 .darkincident{
-   background-color:#386377; 
-   color: rgb(255, 255, 255);
+   background-color:#2b2f31; 
+   color: rgb(201, 136, 57);
+       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
 }
